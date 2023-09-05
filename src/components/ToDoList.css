@@ -1,0 +1,168 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  margin: 1rem 0rem;
+  display: flex;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-container h3 {
+}
+.title-container button {
+}
+
+.title-button {
+  border: none;
+  margin-left: 0.8rem;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  padding: 0.3rem;
+}
+
+.title-button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+form {
+  backdrop-filter: blur(12px) saturate(89%);
+  -webkit-backdrop-filter: blur(12px) saturate(89%);
+  background-color: rgba(17, 25, 40, 0.79);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form-info {
+  margin: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.3rem;
+}
+
+.form-group input {
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+
+.btn-form {
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.87rem;
+  font-weight: bold;
+  background-color: rgb(3, 173, 173);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+/* Ocultar las flechas en los campos de entrada tipo number */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* Estilos Lista */
+
+.list {
+  margin-top: 1rem;
+  backdrop-filter: blur(12px) saturate(89%);
+  -webkit-backdrop-filter: blur(12px) saturate(89%);
+  background-color: rgba(17, 25, 40, 0.79);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.title-list {
+  text-align: center;
+}
+
+.list lu {
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background-color: rgb(36, 52, 82);
+  margin: 1rem 0rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 12px 1px rgba(0, 0, 0, 0.75);
+  border: 1px solid aliceblue;
+  width: 100%;
+}
+
+.item-info {
+  width: 70%;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.87rem;
+  font-weight: bold;
+  margin-right: 1.8rem;
+}
+
+.item-botones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.item-botones button {
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.87rem;
+  color: white;
+}
+
+.item-edit {
+  background-color: rgb(12, 206, 35);
+}
+
+.item-delete {
+  background-color: rgb(255, 0, 0);
+}
+
+.hidden {
+  animation: menuOcultar 0.1s forwards;
+}
+
+@keyframes menuOcultar {
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
