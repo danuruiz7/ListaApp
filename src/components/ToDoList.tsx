@@ -100,7 +100,7 @@ const ToDoList = () => {
         return res.json();
       })
       .then((data) => {
-        setList(data);
+        setList([...list, data]);
         setForm(inicial);
       })
       .catch((err) => {
@@ -120,17 +120,14 @@ const ToDoList = () => {
         return res.json();
       })
       .then((data) => {
-        setList(data);
+        const newList = list.filter((item)=> item.id !== data.id);
+        setList([...newList,data])
         setForm(inicial);
       })
       .catch((err) => {
         console.error('Error al obtener los datos', err);
       });
     }
-
-
-
-
   };
 
   return (
